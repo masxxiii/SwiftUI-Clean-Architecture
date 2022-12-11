@@ -10,6 +10,7 @@
 		A5E0F20C2944DA6400E79F3A /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E0F20B2944DA6400E79F3A /* App.swift */; };
 		A5E0F20E2944DA6400E79F3A /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E0F20D2944DA6400E79F3A /* WelcomeView.swift */; };
 		A5E0F2102944DA6600E79F3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5E0F20F2944DA6600E79F3A /* Assets.xcassets */; };
+		A5E0F24829461EEB00E79F3A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5E0F24729461EEB00E79F3A /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -17,6 +18,7 @@
 		A5E0F20B2944DA6400E79F3A /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		A5E0F20D2944DA6400E79F3A /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		A5E0F20F2944DA6600E79F3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A5E0F24729461EEB00E79F3A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,7 +51,7 @@
 		A5E0F20A2944DA6400E79F3A /* StarterKit */ = {
 			isa = PBXGroup;
 			children = (
-				A5E0F21D2944DD9B00E79F3A /* Utility */,
+				A5E0F22A29461CE200E79F3A /* App */,
 				A5E0F21C2944DD9400E79F3A /* Domain */,
 				A5E0F21B2944DC2000E79F3A /* Presentation */,
 				A5E0F21A2944DB9800E79F3A /* Data */,
@@ -61,7 +63,8 @@
 		A5E0F2192944DB2200E79F3A /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				A5E0F2272944E1F800E79F3A /* Entity */,
+				A5E0F21D2944DD9B00E79F3A /* Utilities */,
+				A5E0F228294615F700E79F3A /* Resources */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -69,8 +72,8 @@
 		A5E0F21A2944DB9800E79F3A /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				A5E0F2242944E0AB00E79F3A /* Source */,
-				A5E0F2232944E09A00E79F3A /* Repository */,
+				A5E0F2242944E0AB00E79F3A /* Sources */,
+				A5E0F2232944E09A00E79F3A /* Repositories */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -78,7 +81,7 @@
 		A5E0F21B2944DC2000E79F3A /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				A5E0F2212944DEDC00E79F3A /* App */,
+				A5E0F2222944DF2E00E79F3A /* Welcome */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -86,49 +89,39 @@
 		A5E0F21C2944DD9400E79F3A /* Domain */ = {
 			isa = PBXGroup;
 			children = (
-				A5E0F2202944DE7600E79F3A /* UseCase */,
-				A5E0F21F2944DE6400E79F3A /* Repository */,
-				A5E0F21E2944DE5C00E79F3A /* Model */,
+				A5E0F2202944DE7600E79F3A /* UseCases */,
+				A5E0F21F2944DE6400E79F3A /* Repositories */,
+				A5E0F21E2944DE5C00E79F3A /* Models */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
 		};
-		A5E0F21D2944DD9B00E79F3A /* Utility */ = {
+		A5E0F21D2944DD9B00E79F3A /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Utility;
+			path = Utilities;
 			sourceTree = "<group>";
 		};
-		A5E0F21E2944DE5C00E79F3A /* Model */ = {
+		A5E0F21E2944DE5C00E79F3A /* Models */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Model;
+			path = Models;
 			sourceTree = "<group>";
 		};
-		A5E0F21F2944DE6400E79F3A /* Repository */ = {
+		A5E0F21F2944DE6400E79F3A /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Repository;
+			path = Repositories;
 			sourceTree = "<group>";
 		};
-		A5E0F2202944DE7600E79F3A /* UseCase */ = {
+		A5E0F2202944DE7600E79F3A /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = UseCase;
-			sourceTree = "<group>";
-		};
-		A5E0F2212944DEDC00E79F3A /* App */ = {
-			isa = PBXGroup;
-			children = (
-				A5E0F20B2944DA6400E79F3A /* App.swift */,
-				A5E0F20F2944DA6600E79F3A /* Assets.xcassets */,
-				A5E0F2222944DF2E00E79F3A /* Welcome */,
-			);
-			path = App;
+			path = UseCases;
 			sourceTree = "<group>";
 		};
 		A5E0F2222944DF2E00E79F3A /* Welcome */ = {
@@ -139,41 +132,83 @@
 			path = Welcome;
 			sourceTree = "<group>";
 		};
-		A5E0F2232944E09A00E79F3A /* Repository */ = {
+		A5E0F2232944E09A00E79F3A /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Repository;
+			path = Repositories;
 			sourceTree = "<group>";
 		};
-		A5E0F2242944E0AB00E79F3A /* Source */ = {
+		A5E0F2242944E0AB00E79F3A /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				A5E0F2262944E0BC00E79F3A /* API */,
-				A5E0F2252944E0B200E79F3A /* Database */,
+				A5E0F2262944E0BC00E79F3A /* Network */,
+				A5E0F2252944E0B200E79F3A /* Storage */,
 			);
-			path = Source;
+			path = Sources;
 			sourceTree = "<group>";
 		};
-		A5E0F2252944E0B200E79F3A /* Database */ = {
+		A5E0F2252944E0B200E79F3A /* Storage */ = {
 			isa = PBXGroup;
 			children = (
+				A5E0F22929461C2100E79F3A /* Entities */,
 			);
-			path = Database;
+			path = Storage;
 			sourceTree = "<group>";
 		};
-		A5E0F2262944E0BC00E79F3A /* API */ = {
+		A5E0F2262944E0BC00E79F3A /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				A5E0F2272944E1F800E79F3A /* Entities */,
 			);
-			path = API;
+			path = Network;
 			sourceTree = "<group>";
 		};
-		A5E0F2272944E1F800E79F3A /* Entity */ = {
+		A5E0F2272944E1F800E79F3A /* Entities */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Entity;
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		A5E0F228294615F700E79F3A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A5E0F24629461EB500E79F3A /* App Assets */,
+				A5E0F22B29461D9F00E79F3A /* Preview Assets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A5E0F22929461C2100E79F3A /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		A5E0F22A29461CE200E79F3A /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A5E0F20B2944DA6400E79F3A /* App.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		A5E0F22B29461D9F00E79F3A /* Preview Assets */ = {
+			isa = PBXGroup;
+			children = (
+				A5E0F24729461EEB00E79F3A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Assets";
+			sourceTree = "<group>";
+		};
+		A5E0F24629461EB500E79F3A /* App Assets */ = {
+			isa = PBXGroup;
+			children = (
+				A5E0F20F2944DA6600E79F3A /* Assets.xcassets */,
+			);
+			path = "App Assets";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,6 +269,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5E0F24829461EEB00E79F3A /* Preview Assets.xcassets in Resources */,
 				A5E0F2102944DA6600E79F3A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
