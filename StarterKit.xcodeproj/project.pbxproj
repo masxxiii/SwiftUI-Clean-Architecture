@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A53CEEA829479CB4007892B4 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53CEEA729479CB4007892B4 /* User.swift */; };
+		A53CEEAC2947A794007892B4 /* UserDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53CEEAB2947A794007892B4 /* UserDTO.swift */; };
+		A53CEEAE2947AAA9007892B4 /* UserAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53CEEAD2947AAA9007892B4 /* UserAPI.swift */; };
+		A53CEEB22947AFC1007892B4 /* UserDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53CEEB12947AFC1007892B4 /* UserDataSource.swift */; };
 		A5E0F20C2944DA6400E79F3A /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E0F20B2944DA6400E79F3A /* App.swift */; };
 		A5E0F20E2944DA6400E79F3A /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E0F20D2944DA6400E79F3A /* WelcomeView.swift */; };
 		A5E0F2102944DA6600E79F3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5E0F20F2944DA6600E79F3A /* Assets.xcassets */; };
@@ -14,6 +18,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A53CEEA729479CB4007892B4 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		A53CEEAB2947A794007892B4 /* UserDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDTO.swift; sourceTree = "<group>"; };
+		A53CEEAD2947AAA9007892B4 /* UserAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAPI.swift; sourceTree = "<group>"; };
+		A53CEEB12947AFC1007892B4 /* UserDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataSource.swift; sourceTree = "<group>"; };
 		A5E0F2082944DA6400E79F3A /* StarterKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarterKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5E0F20B2944DA6400E79F3A /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		A5E0F20D2944DA6400E79F3A /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
@@ -32,6 +40,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A53CEEAF2947ABF2007892B4 /* Endpoints */ = {
+			isa = PBXGroup;
+			children = (
+				A53CEEAD2947AAA9007892B4 /* UserAPI.swift */,
+			);
+			path = Endpoints;
+			sourceTree = "<group>";
+		};
+		A53CEEB02947AF72007892B4 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				A53CEEB12947AFC1007892B4 /* UserDataSource.swift */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
 		A5E0F1FF2944DA6400E79F3A = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +130,7 @@
 		A5E0F21E2944DE5C00E79F3A /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				A53CEEA729479CB4007892B4 /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -142,6 +167,7 @@
 		A5E0F2242944E0AB00E79F3A /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				A53CEEB02947AF72007892B4 /* Interface */,
 				A5E0F2262944E0BC00E79F3A /* Network */,
 				A5E0F2252944E0B200E79F3A /* Storage */,
 			);
@@ -159,6 +185,7 @@
 		A5E0F2262944E0BC00E79F3A /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				A53CEEAF2947ABF2007892B4 /* Endpoints */,
 				A5E0F2272944E1F800E79F3A /* Entities */,
 			);
 			path = Network;
@@ -167,6 +194,7 @@
 		A5E0F2272944E1F800E79F3A /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				A53CEEAB2947A794007892B4 /* UserDTO.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -283,6 +311,10 @@
 			files = (
 				A5E0F20E2944DA6400E79F3A /* WelcomeView.swift in Sources */,
 				A5E0F20C2944DA6400E79F3A /* App.swift in Sources */,
+				A53CEEAE2947AAA9007892B4 /* UserAPI.swift in Sources */,
+				A53CEEAC2947A794007892B4 /* UserDTO.swift in Sources */,
+				A53CEEA829479CB4007892B4 /* User.swift in Sources */,
+				A53CEEB22947AFC1007892B4 /* UserDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
